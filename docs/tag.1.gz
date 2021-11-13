@@ -1,0 +1,41 @@
+.\" Manpage for tag.
+.TH man 1 "23 March 2020" "1.0" "tag man page"
+.SH NAME
+tag \- manage tags for files
+
+.SH SYNOPSIS
+tag <command> <args>...
+
+.SH DESCRIPTION
+Add or delete tags from files.
+
+.SH COMMANDS
+.B add <file> <tag>...
+Add a tag to a file
+
+.B delete <file> <tag>...
+Delete a tag from a file
+
+.B get <file>...
+Get all tags from a file
+
+.B search <args>...
+Search for files containing the tag or the sub-tags of it
+
+.B addgrad  <parent_tag> <child_tag>
+Add a hierarchy between two tags, when 1st tag is add use "_" as <parent_tag>
+
+.B deletegrad <tag>
+Delete the entire hierarchy from a tag and delete the sub-tags in it
+
+.B truncate <file> 
+Delete all tags from a file
+
+.B tree <tag>
+Show the tree of the hierarchy of a tag
+
+.B help 
+Show how to use it
+
+.SH BUGS
+No known bugs.
